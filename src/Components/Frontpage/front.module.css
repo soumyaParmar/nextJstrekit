@@ -1,0 +1,11 @@
+.front{
+    @apply flex items-center justify-center h-[100vh];
+    background-image: url("./background.jpg");
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.para{
+    @apply text-[4em] text-center text-[#5694c7];
+    text-shadow: 2px 2px rgba(255, 119, 0, 0.938);
+}

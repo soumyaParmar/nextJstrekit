@@ -1,0 +1,18 @@
+.midpage{
+    @apply flex flex-col items-center justify-center justify-evenly h-[90vh] bg-[#001a21];
+}
+.midHead{
+   @apply text-[2em] text-[#5694c7] flex items-center;
+}
+.contant{
+    @apply h-[70%] w-[500px] max-[600px]:w-4/5  ; 
+}
+.page{
+    @apply h-[300px] w-[100px];
+}
+.slider{
+    @apply h-[100%]
+}
+.image{
+    @apply h-[300px] 
+}
