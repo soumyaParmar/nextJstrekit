@@ -1,11 +1,10 @@
 .front{
-    @apply flex items-center justify-center h-[100vh];
-    background-image: url("./background.jpg");
-    background-size: cover;  
-    background-position: center;
-    background-repeat: no-repeat;
+    @apply flex items-center flex-col justify-center max-[600px]:justify-evenly max-[600px]:items-start h-[100vh] gap-8;
 }
 .para{
-    @apply text-[4em] text-center text-[#5694c7];
-    text-shadow: 2px 2px rgba(255, 119, 0, 0.938);
+    @apply text-[4em] text-center w-[60%] max-[600px]:text-[3em] max-[600px]:text-left p-6 ;
+}
+.connect{
+    @apply flex justify-center max-[600px]:justify-start pl-6 h-12 ;
+    width: 80%;
 }

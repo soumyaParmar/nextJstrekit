@@ -2,7 +2,7 @@
     @apply flex items-center justify-center h-[100vh] bg-[#001a21];
 } */
 .sec_body {
-    @apply flex items-center justify-center h-[100vh] bg-[#001a21];
+    @apply flex items-center justify-center h-[100vh];
   }
   .sec_inner {  
     @apply grid gap-10 max-[600px]:grid-cols-2 max-[600px]:gap-4;
@@ -10,12 +10,15 @@
     height: 80%;
     padding: 1rem;
   }
+  .sec_1,.sec_6{
+    grid-column: span 2;
+  }
   .sec_1,
   .sec_2,
   .sec_3,
   .sec_4,
   .sec_5,
-  .sec_6 {
+  .sec_6{
     position: relative;
     background: url("./Asset/back1.jpg");
     background-size: cover;

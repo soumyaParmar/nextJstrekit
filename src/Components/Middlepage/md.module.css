@@ -1,5 +1,5 @@
 .midpage{
-    @apply flex flex-col items-center justify-center justify-evenly h-[90vh] bg-[#001a21];
+    @apply flex flex-col items-center justify-center justify-evenly h-[90vh] ;
 }
 .midHead{
    @apply text-[2em] text-[#5694c7] flex items-center;
@@ -11,8 +11,14 @@
     @apply h-[300px] w-[100px];
 }
 .slider{
-    @apply h-[100%]
+    @apply h-[100%] bg-slate-400 rounded-md;
+}
+.slider button{
+    filter: invert(1)
 }
 .image{
-    @apply h-[300px] 
+    @apply h-[300px] rounded-t-md;
+}
+.detail{
+    @apply p-4 flex flex-col justify-around;
 }

@@ -27,8 +27,11 @@ function Midpage() {
         <Slider {...settings} className={style.slider} >
         {data.map((item)=>(
           <div key={item.id}>
-            <Image src={item.img} className={style.image}/>
-            <h1>{item.detail}</h1>
+            <Image src={item.img} className={style.image} alt='mid'/>
+            <div className={style.detail}>
+              <h1>{item.detail}</h1>
+              <label>Check out</label>
+            </div>           
           </div>
         ))}
         </Slider> 

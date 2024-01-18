@@ -65,6 +65,7 @@ function Lastpage() {
               <label className={style.sec_lab}>Know More</label>
             </div>
           </div>
+          
         </div>
       </div>
     );
