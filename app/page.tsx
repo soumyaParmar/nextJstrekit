@@ -8,6 +8,10 @@ import { Button } from '@/components/ui/button';
 import Treks from './treks/page';
 import Camping from './camping/page';
 import Events from './events/page';
+import insta from '../public/insta.svg'
+import whatsapp from '../public/whatsapp.svg'
+import gmail from '../public/gmail.svg'
+import Image from 'next/image';
 
 export default function Home() {
   const parallaxRef = useRef<HTMLDivElement>(null);
@@ -32,17 +36,16 @@ export default function Home() {
           ref={parallaxRef}
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")',
+            backgroundImage: 'url("/bg.gif")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            transform: 'translateZ(-10px) scale(2)',
           }}
         />
         <div className="absolute inset-0 bg-black/40 z-10" />
         <div className="relative z-20 h-full flex items-center justify-center text-white">
           <div className="text-center space-y-6 px-4">
             <motion.h1 
-              className="text-5xl md:text-7xl font-bold"
+              className="text-7xl text-white/50 md:text-7xl font-bold"
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
@@ -50,7 +53,7 @@ export default function Home() {
               Adventure Awaits
             </motion.h1>
             <motion.p 
-              className="text-xl md:text-2xl max-w-2xl mx-auto"
+              className="text-xl text-white/50 md:text-2xl max-w-2xl mx-auto"
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -117,6 +120,11 @@ export default function Home() {
           <Treks/>
           <Camping/>
           <Events/>
+        </div>
+        <div className='flex fixed bottom-5 right-0 bg-black/50 z-50 pr-1 rounded-l-full'>
+          <Image src={insta} alt=''/>
+          <Image src={whatsapp} height={40} alt=''/>
+          <Image src={gmail} alt=''/>
         </div>
       </section>
     </main>
