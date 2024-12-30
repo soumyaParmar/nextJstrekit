@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 const treks = [
   {
     id: 1,
-    title: "Mount Everest Base Camp",
+    title: "Kauri pass",
     difficulty: "Hard",
     duration: "14 days",
     elevation: "5,364m",
@@ -18,7 +18,7 @@ const treks = [
   },
   {
     id: 2,
-    title: "Inca Trail to Machu Picchu",
+    title: "Tungnath",
     difficulty: "Moderate",
     duration: "4 days",
     elevation: "4,215m",
@@ -28,7 +28,7 @@ const treks = [
   },
   {
     id: 3,
-    title: "Tour du Mont Blanc",
+    title: "Aadi kailash",
     difficulty: "Moderate",
     duration: "11 days",
     elevation: "2,665m",
@@ -38,9 +38,9 @@ const treks = [
   }
 ];
 
-export default function Treks() {
+export default function Treks({className}:{className : string}) {
   return (
-    <div className="min-h-screen pt-20 bg-gray-50">
+    <div className={` min-h-screen pt-20 bg-gray-50 ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div
           initial={{ y: 20, opacity: 0 }}
