@@ -122,9 +122,9 @@ export default function Home() {
           <Events/>
         </div>
         <div className='flex fixed bottom-5 right-0 bg-black/50 z-50 pr-1 rounded-l-full'>
-          <Image src={insta} alt=''/>
-          <Image src={whatsapp} height={40} alt=''/>
-          <Image src={gmail} alt=''/>
+          <Link href="https://www.instagram.com/trekit_himalaya/profilecard/?igsh=MTJyOWtqYWhudmtrYw=="><Image src={insta} alt=''/></Link>
+          <Link className='flex' href="https://wa.me/+917302019143"><Image src={whatsapp} height={40} alt=''/></Link>
+          <Link href="mailto:trekithimalaya.com"><Image src={gmail} alt=''/></Link>
         </div>
       </section>
     </main>
