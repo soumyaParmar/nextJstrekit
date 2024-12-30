@@ -126,9 +126,9 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <Treks className="!pt-0" />
-        <Camping className="!pt-0" />
-        <Events className="!pt-0" />
+        <Treks  />
+        <Camping  />
+        <Events  />
       </div>
       <div className="flex fixed bottom-5 right-0 bg-black/50 z-50 pr-1 rounded-l-full">
         <Link href="https://www.instagram.com/trekit_himalaya/profilecard/?igsh=MTJyOWtqYWhudmtrYw==">
